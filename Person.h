@@ -18,7 +18,7 @@ public:
     Person(int startingHeath, Weapon startingWeapon);
     ~Person();
 
-    void interact(Person p) override;
+    void interact(Person* p) override;
     void printSelf() override;
 
     void changeHealth(int change);

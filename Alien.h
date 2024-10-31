@@ -13,7 +13,7 @@ private:
     bool grabbedPlayer = false;
 public:
     Alien();
-    void interact(Person p) override;
+    void interact(Person* p) override;
     void printSelf() override;
 };
 

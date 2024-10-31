@@ -10,7 +10,7 @@
 class Entity {
 public:
     virtual ~Entity() = default;
-    virtual void interact(Person p);
+    virtual void interact(Person* p);
     virtual void printSelf();
 };
 

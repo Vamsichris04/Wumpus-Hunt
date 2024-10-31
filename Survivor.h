@@ -15,7 +15,7 @@ private:
     void setXYTranslate();
 public:
     Survivor();
-    void interact(Person p) override;
+    void interact(Person* p) override;
     void printSelf() override;
 };
 

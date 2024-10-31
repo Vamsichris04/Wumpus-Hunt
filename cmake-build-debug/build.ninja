@@ -67,8 +67,8 @@ build CMakeFiles/Wumpus_Hunt.dir/Entity.cpp.obj: CXX_COMPILER__Wumpus_Hunt_unsca
   OBJECT_DIR = CMakeFiles\Wumpus_Hunt.dir
   OBJECT_FILE_DIR = CMakeFiles\Wumpus_Hunt.dir
 
-build CMakeFiles/Wumpus_Hunt.dir/Hazards.cpp.obj: CXX_COMPILER__Wumpus_Hunt_unscanned_Debug C$:/Users/barbulescuv/CLion/Github/Proc$ &$ OO$ C++/Proc$ &$ OO$ C++$ Assignments/Wumpus-Hunt/Hazards.cpp || cmake_object_order_depends_target_Wumpus_Hunt
-  DEP_FILE = CMakeFiles\Wumpus_Hunt.dir\Hazards.cpp.obj.d
+build CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj: CXX_COMPILER__Wumpus_Hunt_unscanned_Debug C$:/Users/barbulescuv/CLion/Github/Proc$ &$ OO$ C++/Proc$ &$ OO$ C++$ Assignments/Wumpus-Hunt/Hazard.cpp || cmake_object_order_depends_target_Wumpus_Hunt
+  DEP_FILE = CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Wumpus_Hunt.dir
   OBJECT_FILE_DIR = CMakeFiles\Wumpus_Hunt.dir
@@ -111,7 +111,7 @@ build CMakeFiles/Wumpus_Hunt.dir/Room.cpp.obj: CXX_COMPILER__Wumpus_Hunt_unscann
 #############################################
 # Link the executable Wumpus_Hunt.exe
 
-build Wumpus_Hunt.exe: CXX_EXECUTABLE_LINKER__Wumpus_Hunt_Debug CMakeFiles/Wumpus_Hunt.dir/WumpusDriver.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Weapon.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Entity.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Hazards.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Treasure.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Survivor.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Alien.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Room.cpp.obj
+build Wumpus_Hunt.exe: CXX_EXECUTABLE_LINKER__Wumpus_Hunt_Debug CMakeFiles/Wumpus_Hunt.dir/WumpusDriver.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Weapon.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Entity.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Treasure.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Survivor.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Alien.cpp.obj CMakeFiles/Wumpus_Hunt.dir/Room.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Wumpus_Hunt.dir
