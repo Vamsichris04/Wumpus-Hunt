@@ -5,6 +5,7 @@
 #ifndef PERSON_H
 #define PERSON_H
 #include "Entity.h"
+#include "Room.h"
 #include "Weapon.h"
 
 
@@ -12,11 +13,13 @@ class Person : public Entity{
 private:
     int health;
     Weapon weapon;
+    Room* room;
 public:
     Person();
     Person(int startingHeath);
     Person(int startingHeath, Weapon startingWeapon);
-    ~Person();
+    Person(int startingHealth, Weapon startingWeapon, Room& startingRoom);
+    ~Person() override;
 
     void interact(Person* p) override;
     void printSelf() override;
@@ -24,7 +27,13 @@ public:
     void changeHealth(int change);
 
     void setWeapon(Weapon w);
-    void getWeapon();
+    Weapon getWeapon();
+
+    void setHealth(int change);
+    int getHealth() const;
+
+    void setRoom(Room* r);
+    Room* getRoom();
 };
 
 

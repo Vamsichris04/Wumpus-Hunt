@@ -12,6 +12,8 @@ public:
     virtual ~Entity() = default;
     virtual void interact(Person* p);
     virtual void printSelf();
+
+    void interact(Entity* p);
 };
 
 
