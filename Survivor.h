@@ -19,7 +19,7 @@ private:
      * for xTranslate and yTranslate variables
      */
     void setXYTranslate();
-    void moveInDirection(Person *p, int steps, std::function<Room*()> getNextRoom, function<void(Room*)> setRoom);
+    //void moveInDirection(Person *p, int steps, std::function<Room*()> getNextRoom, function<void(Room*)> setRoom);
 public:
     Survivor();
     ~Survivor() override;
