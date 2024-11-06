@@ -13,27 +13,22 @@ class Person : public Entity{
 private:
     int health;
     Weapon weapon;
-    Room* room;
+    Room* room = nullptr;
 public:
-    Person();
-    Person(int startingHeath);
-    Person(int startingHeath, Weapon startingWeapon);
-    Person(int startingHealth, Weapon startingWeapon, Room& startingRoom);
+    Person(int startingHealth, const Weapon& startingWeapon, Room* startingRoom);
     ~Person() override;
 
     void interact(Person* p) override;
     void printSelf() override;
 
     void changeHealth(int change);
-
-    void setWeapon(Weapon w);
-    Weapon getWeapon();
-
-    void setHealth(int change);
     int getHealth() const;
 
+    void setWeapon(const Weapon& w);
+    Weapon& getWeapon();
+
     void setRoom(Room* r);
-    Room* getRoom();
+    Room* getRoom() const;
 };
 
 
