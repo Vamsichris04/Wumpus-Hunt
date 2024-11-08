@@ -7,7 +7,6 @@
 #include <string>
 #include "Entity.h"
 
-
 class Weapon : public Entity{
 private:
     int ammo;
@@ -21,7 +20,7 @@ public:
     int getDamage() const;
     std::string getName() const;
 
-    void setAmmo(int ammo);
+    void changeAmmo(int ammo);
     void setDamage(int damage);
     void setName(std::string name);
 };

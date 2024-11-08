@@ -22,8 +22,8 @@ std::string Weapon::getName() const{
 }
 
 // Setters
-void Weapon::setAmmo(const int ammo) {
-    this->ammo = ammo;
+void Weapon::changeAmmo(const int ammo) {
+    this->ammo += ammo;
 }
 
 void Weapon::setDamage(const int damage) {

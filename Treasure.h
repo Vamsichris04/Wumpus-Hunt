@@ -10,6 +10,7 @@
 class Treasure : public Entity{
 protected:
     int changeValueBy = 0;
+    std::string name;
 public:
     ~Treasure() override = default;
 };

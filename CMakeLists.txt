@@ -7,7 +7,8 @@ add_executable(Wumpus_Hunt
     WumpusDriver.cpp
         Entity.h
         Entity.cpp
-        blank/Weapon.cpp
+        Weapon.h
+        Weapon.cpp
         Person.h
         Hazard.h
         Hazard.cpp
@@ -20,4 +21,8 @@ add_executable(Wumpus_Hunt
         Alien.cpp
         Room.h
         Room.cpp
+        Ammo.h
+        Ammo.h
+        Ammo.h
+        Ammo.cpp
 )
