@@ -5,9 +5,9 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Wumpus_Hunt
     WumpusDriver.cpp
-        Weapon.cpp
         Entity.h
         Entity.cpp
+        blank/Weapon.cpp
         Person.h
         Hazard.h
         Hazard.cpp
@@ -20,4 +20,4 @@ add_executable(Wumpus_Hunt
         Alien.cpp
         Room.h
         Room.cpp
-        Weapon.h)
+)

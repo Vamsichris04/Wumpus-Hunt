@@ -1,3 +1,4 @@
 # ninja log v6
-4	125	7518416845964730	CMakeFiles/Wumpus_Hunt.dir/WumpusDriver.cpp.obj	88ac0377a9b64af9
+4	1126	7527856998473760	CMakeFiles/Wumpus_Hunt.dir/WumpusDriver.cpp.obj	88ac0377a9b64af9
 127	278	7518416847189361	Wumpus_Hunt.exe	dadc4bb8d0fabd57
+3	420	7527861890807435	build.ninja	9762d4b4576a6564

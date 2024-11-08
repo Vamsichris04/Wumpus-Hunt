@@ -12,30 +12,32 @@ Room::Room(Room *up, Room *down, Room *left, Room *right) {
 }
 
 Room::~Room() {
-    delete[] entities;
+    delete object;
+    delete player;
     delete up;
     delete down;
     delete left;
     delete right;
 
-    entities = nullptr;
+    object = nullptr;
+    player = nullptr;
     up = nullptr;
     down = nullptr;
     left = nullptr;
     right = nullptr;
 }
 
-void Room::setThing(Entity *e) const {entities[0] = e;}
-void Room::setPerson(Entity *p) const {entities[1] = p;}
+void Room::setThing(Entity *e) {object = e;}
+void Room::setPerson(Person *p) {player = p;}
 
-void Room::interact() const {entities[0] ->interact(entities[1]);}
+void Room::interact() const {object ->interact(player);}
 
 Room *Room::getUp() const {return up;}
 Room *Room::getDown() const {return down;}
 Room *Room::getLeft() const {return left;}
 Room *Room::getRight() const {return right;}
 
-void Room::print() const {entities[0] -> printSelf();}
+void Room::print() const {object -> printSelf();}
 
 
 

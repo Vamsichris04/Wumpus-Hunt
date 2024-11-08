@@ -1,5 +1,5 @@
 //
-// Created by barbulescuv on 10/28/2024.
+// Created by barbulescuv on 11/8/2024.
 //
 
 #ifndef WEAPON_H
@@ -7,21 +7,23 @@
 #include <string>
 #include "Entity.h"
 
+
 class Weapon : public Entity{
-protected:
+private:
+    int ammo;
+    int damage;
     std::string name;
-    int damage = 0;
-    int ammo = 0;
 public:
-    ~Weapon() override = default;
-    virtual int getDamage();
-    virtual std::string getName();
+    Weapon(int ammo, int damage, std::string name);
+    ~Weapon() override;
 
-    virtual int setDamage();
-    virtual std::string setName();
+    int getAmmo() const;
+    int getDamage() const;
+    std::string getName() const;
 
-    virtual int getAmmo();
-    virtual int setAmmo();
+    void setAmmo(int ammo);
+    void setDamage(int damage);
+    void setName(std::string name);
 };
 
 
