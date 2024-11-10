@@ -11,10 +11,10 @@
 
 class Person : public Entity{
     int health;
-    Weapon weapon;
+    Weapon* weapon = nullptr;
     Room* room = nullptr;
 public:
-    Person(int startingHealth, const Weapon& startingWeapon, Room* startingRoom);
+    Person(int startingHealth, Room* startingRoom);
     ~Person() override;
 
     void interact(Person* p) override;
@@ -23,8 +23,8 @@ public:
     void changeHealth(int change);
     int getHealth() const;
 
-    void setWeapon(const Weapon& w);
-    Weapon& getWeapon();
+    void setWeapon(Weapon* w);
+    Weapon* getWeapon() const;
 
     void setRoom(Room* r);
     Room* getRoom() const;
