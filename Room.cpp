@@ -4,12 +4,7 @@
 
 #include "Room.h"
 
-Room::Room(Room *up, Room *down, Room *left, Room *right) {
-    this->up = up;
-    this->down = down;
-    this->left = left;
-    this->right = right;
-}
+Room::Room() = default;
 
 Room::~Room() {
     delete object;
@@ -27,7 +22,10 @@ Room::~Room() {
     right = nullptr;
 }
 
-void Room::setThing(Entity *e) {object = e;}
+void Room::setThing(Entity *e) {
+    delete object;
+    object = e;
+}
 void Room::setPerson(Person *p) {player = p;}
 
 void Room::interact() const {object ->interact(player);}
@@ -36,6 +34,11 @@ Room *Room::getUp() const {return up;}
 Room *Room::getDown() const {return down;}
 Room *Room::getLeft() const {return left;}
 Room *Room::getRight() const {return right;}
+
+void Room::setUp(Room* room) { up = room; }
+void Room::setDown(Room* room) { down = room; }
+void Room::setLeft(Room* room) { left = room; }
+void Room::setRight(Room* room) { right = room; }
 
 void Room::print() const {object -> printSelf();}
 

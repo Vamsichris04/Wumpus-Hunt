@@ -10,8 +10,8 @@
 class Entity {
 public:
     virtual ~Entity() = default;
-    virtual void interact(Person* p);
-    virtual void printSelf();
+    virtual void interact(Person* p) = 0;
+    virtual void printSelf() = 0;
 };
 
 

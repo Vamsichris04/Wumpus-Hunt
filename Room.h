@@ -5,14 +5,11 @@
 #ifndef ROOM_H
 #define ROOM_H
 #include "Entity.h"
+#include "Person.h"
 
 
 class Room {
 private:
-    // Each room contains a thing and potentially a person
-    // Things are stored at index 0, persons at index 1
-    //Entity** entities = new Entity*[2];
-
     Entity* object = new Entity;
     Person *player = nullptr;
 
@@ -21,7 +18,7 @@ private:
     Room* left = nullptr;
     Room* right = nullptr;
 public:
-    Room(Room* up, Room* down, Room* left, Room* right);
+    Room();
     ~Room();
 
     void setThing(Entity* e);
@@ -35,6 +32,11 @@ public:
     Room* getDown() const;
     Room* getLeft() const;
     Room* getRight() const;
+
+    void setUp(Room* room);
+    void setDown(Room* room);
+    void setLeft(Room* room);
+    void setRight(Room* room);
 };
 
 
