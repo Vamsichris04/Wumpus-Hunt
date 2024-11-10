@@ -7,20 +7,45 @@
 #include "Entity.h"
 #include <string>
 
-
+using namespace std;
 
 class Hazard : public Entity{
 protected:
     int damage = 0;
     std::string name;
 public:
+    Hazard(const string& name, int damage);
     ~Hazard() override = default;
-    virtual int getDamage();
-    virtual std::string getName();
-    virtual int setDamage();
-    virtual std::string setName();
+
+    virtual int getDamage() const;
+    virtual string getName() const;
+    virtual void setDamage(int dmg);
+    virtual void setName(const string& hazardName);
+
+    void printSelf() const;
+};
+class Alien : public Hazard {
+public:
+    Alien();
+    void interact(Person& player) ; // Ends the game upon interaction
 };
 
+class ExposedWiresAndPits : public Hazard {
+public:
+    ExposedWiresAndPits();
+    void interact(Person& player) ; // Random damage or fatal pitfall
+};
 
+class LowOxygenRoom : public Hazard {
+public:
+    LowOxygenRoom();
+    void interact(Person& player) ; // Random damage
+};
 
-#endif //HAZARDS_H
+class FaultyDoors : public Hazard {
+public:
+    FaultyDoors();
+    void interact(Person& player) ; // Random damage
+};
+
+#endif // HAZARDS_H

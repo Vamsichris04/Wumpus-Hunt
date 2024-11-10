@@ -10,7 +10,6 @@
 
 
 class Person : public Entity{
-private:
     int health;
     Weapon weapon;
     Room* room = nullptr;

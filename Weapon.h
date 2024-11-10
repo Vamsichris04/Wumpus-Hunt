@@ -1,5 +1,5 @@
 //
-// Created by barbulescuv on 11/8/2024.
+// Created by barbulescuv on 10/28/2024.
 //
 
 #ifndef WEAPON_H
@@ -8,10 +8,10 @@
 #include "Entity.h"
 
 class Weapon : public Entity{
-private:
-    int ammo;
-    int damage;
+protected:
     std::string name;
+    int damage = 0;
+    int ammo = 1;
 public:
     Weapon(int ammo, int damage, std::string name);
     ~Weapon() override;
@@ -25,6 +25,16 @@ public:
     void setName(std::string name);
 };
 
+class Gun : public Weapon {
+public:
+    Gun();
+    void interact(Person& player);
+};
 
+class Flamethrower : public Weapon {
+public:
+    Flamethrower();
+    void interact(Person& player);
+};
 
 #endif //WEAPON_H

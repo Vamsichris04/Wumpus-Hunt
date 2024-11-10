@@ -3,8 +3,9 @@
 //
 
 #include <iostream>
-using namespace std;
 #include "Person.h"
+
+using namespace std;
 
 Person::Person(const int startingHealth, const Weapon& startingWeapon, Room* startingRoom) : health(startingHealth),  weapon(startingWeapon), room(startingRoom) {};
 Person::~Person() {
