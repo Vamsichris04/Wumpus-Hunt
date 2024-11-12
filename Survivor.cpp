@@ -2,6 +2,7 @@
 // Created by barbulescuv on 10/28/2024.
 //
 
+#include "Room.h"
 using namespace std;
 #include "Survivor.h"
 #include "Person.h"

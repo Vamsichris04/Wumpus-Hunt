@@ -5,8 +5,11 @@
 #ifndef PERSON_H
 #define PERSON_H
 #include "Entity.h"
-#include "Room.h"
-#include "Weapon.h"
+
+// Forward declarations to avoid circular dependencies
+class Entity;
+class Weapon;
+class Room;
 
 
 class Person : public Entity{

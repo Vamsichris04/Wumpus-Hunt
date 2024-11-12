@@ -4,16 +4,16 @@
 
 #ifndef ENTITY_H
 #define ENTITY_H
-#include "Person.h"
 
+class Person; // Forward declaration to avoid circular dependency
 
 class Entity {
 public:
-    virtual ~Entity() = default;
+    virtual ~Entity() = 0;
     virtual void interact(Person* p) = 0;
     virtual void printSelf() = 0;
 };
 
-
+inline Entity::~Entity() {}
 
 #endif //ENTITY_H

@@ -127,7 +127,7 @@ Room* buildRoom(char object) {
             newRoom->setThing(new Ammo("pistol", 10));
             break;
         } case '#': {
-            newRoom->setThing(new Alien());
+            //newRoom->setThing(new Alien());
             break;
         } default:
             newRoom->setThing(nullptr);

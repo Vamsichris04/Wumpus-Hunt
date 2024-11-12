@@ -2,8 +2,8 @@
 #define WEAPON_H
 
 #include <string>
-#include "Entity.h"
 
+#include "Entity.h" // Include Entity here, as Weapon directly inherits from it
 class Person; // Forward declaration to avoid circular dependency
 
 class Weapon : public Entity {
@@ -14,7 +14,7 @@ protected:
 
 public:
     Weapon(int ammo, int damage, const std::string& name);
-    ~Weapon() override;
+    ~Weapon();
 
     int getAmmo() const;
     int getDamage() const;

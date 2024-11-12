@@ -4,13 +4,13 @@
 
 #ifndef ROOM_H
 #define ROOM_H
+
 #include "Entity.h"
 #include "Person.h"
 
-
 class Room {
 private:
-    Entity* object = new Entity;
+    Entity* object = nullptr;
     Person *player = nullptr;
 
     Room* up = nullptr;
