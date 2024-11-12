@@ -48,5 +48,5 @@ void Alien::hitByWeapon(int range, Person* p) {
 
 // Display the Alien symbol
 void Alien::printSelf() {
-    std::cout << "#" << std::endl; // Represents Alien on the map
+    std::cout << "You smell something foul."  << std::endl; // Represents Alien on the map
 }

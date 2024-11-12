@@ -19,9 +19,18 @@ Person::~Person() {
     room = nullptr;
 }
 
-void Person::interact(Person *p) {
-    //TODO
+
+void Person::interact(Person* p) {
+    if (room == nullptr) {
+        std::cout << "You are not in a valid room!" << std::endl;
+        return;
+    }
+
+    // Delegate interaction handling to the room
+    room->interact();
 }
+
+
 
 void Person::printSelf() {
     cout << '+' << endl;
