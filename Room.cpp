@@ -26,7 +26,11 @@ void Room::setThing(Entity *e) {
     delete object;
     object = e;
 }
+Entity* Room::getThing() const {
+    return object;
+}
 void Room::setPerson(Person *p) {player = p;}
+Person *Room::getPerson() const {return player;}
 
 void Room::interact() const {object ->interact(player);}
 

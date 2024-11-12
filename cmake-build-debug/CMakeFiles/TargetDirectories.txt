@@ -1,3 +1,3 @@
-C:/Users/sudersanamv/CLionProjects/Wumpus-Hunt/cmake-build-debug/CMakeFiles/Wumpus_Hunt.dir
-C:/Users/sudersanamv/CLionProjects/Wumpus-Hunt/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/sudersanamv/CLionProjects/Wumpus-Hunt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/vicb2/CLionProjects/wumpus_hunt/cmake-build-debug/CMakeFiles/Wumpus_Hunt.dir
+C:/Users/vicb2/CLionProjects/wumpus_hunt/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vicb2/CLionProjects/wumpus_hunt/cmake-build-debug/CMakeFiles/rebuild_cache.dir

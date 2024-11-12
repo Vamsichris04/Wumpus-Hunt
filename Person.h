@@ -8,6 +8,7 @@
 #include "Room.h"
 #include "Weapon.h"
 
+class Room;
 
 class Person : public Entity{
 protected:

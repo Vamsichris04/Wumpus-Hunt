@@ -10,8 +10,8 @@
 
 class Room {
 private:
-    Entity* object = new Entity;
-    Person *player = nullptr;
+    Entity* object;
+    Person* player;
 
     Room* up = nullptr;
     Room* down = nullptr;
@@ -22,7 +22,9 @@ public:
     ~Room();
 
     void setThing(Entity* e);
+    Entity* getThing() const;
     void setPerson(Person *p);
+    Person* getPerson() const;
 
     void print() const;
 
@@ -37,7 +39,7 @@ public:
     void setDown(Room* room);
     void setLeft(Room* room);
     void setRight(Room* room);
-    int getDistanceTo(Room * room);
+    int getDistanceTo(Room* room);
 };
 
 

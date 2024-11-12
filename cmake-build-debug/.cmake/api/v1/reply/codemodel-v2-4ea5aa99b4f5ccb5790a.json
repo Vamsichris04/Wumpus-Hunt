@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/barbulescuv/CLion/Github/Proc & OO C++/Proc & OO C++ Assignments/Wumpus-Hunt/cmake-build-debug",
-		"source" : "C:/Users/barbulescuv/CLion/Github/Proc & OO C++/Proc & OO C++ Assignments/Wumpus-Hunt"
+		"build" : "C:/Users/vicb2/CLionProjects/wumpus_hunt/cmake-build-debug",
+		"source" : "C:/Users/vicb2/CLionProjects/wumpus_hunt"
 	},
 	"version" : 
 	{

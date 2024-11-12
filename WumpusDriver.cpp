@@ -17,15 +17,8 @@
 using namespace std;
 Room* buildMap(const vector<vector<char>>& map);
 Room* buildRoom(char object);
-
-void displayMap(const vector<vector<char>>& map) {
-    for (const auto& row : map) {
-        for (const auto& cell : row) {
-            cout << cell << ' ';
-        }
-        cout << endl;
-    }
-}
+void displayMap(const vector<vector<char>>& map);
+void printHints(const Room* room);
 
 int main() {
     vector<vector<char>> map = {
@@ -40,10 +33,57 @@ int main() {
     cout << "Map Layout:" << endl;
     displayMap(map);
 
+    Room* room = buildMap(map);
+    Person* player = room->getPerson();
+    bool gameOver = false;
+
+    while (!gameOver) {
+        printHints(room);
+        char choice;
+        cin >> choice;
+
+        switch (choice) {
+            case 'e': {
+                if (room->getLeft() != nullptr) {
+                    player->setRoom(room->getLeft());
+                    room->getLeft()->setPerson(player);
+                    room->setPerson(nullptr);
+                    room = room->getLeft();
+                }
+                break;
+            } case 'w': {
+                if (room->getRight() != nullptr) {
+                    player->setRoom(room->getRight());
+                    room->getRight()->setPerson(player);
+                    room->setPerson(nullptr);
+                    room = room->getRight();
+                }
+            } case 'n': {
+                if (room->getUp() != nullptr) {
+                    player->setRoom(room->getUp());
+                    room->getUp()->setPerson(player);
+                    room->setPerson(nullptr);
+                    room = room->getUp();
+                }
+            } case 's': {
+                if (room->getDown() != nullptr) {
+                    player->setRoom(room->getDown());
+                    room->getDown()->setPerson(player);
+                    room->setPerson(nullptr);
+                    room = room->getDown();
+                }
+            } case 'q': {
+                gameOver = true;
+                break;
+            } default: break;
+        }
+    }
+
+
+
     return 0;
 }
 
-// Function to build and link rooms according to the map layout
 /**
  * Builds and links rooms according to map layout
  * @param map the map of characters dictating what's in each room
@@ -104,6 +144,11 @@ Room* buildMap(const vector<vector<char>>& map) {
     return startingRoom;
 }
 
+/**
+ * Builds an individual room based on the character at the corresponding index
+ * @param object the character designating the room to create
+ * @return a pointer to a new room
+ */
 Room* buildRoom(char object) {
     Room* newRoom = new Room();
     switch (object) {
@@ -111,10 +156,12 @@ Room* buildRoom(char object) {
             //TODO: Implement when weapons are developed
             //Weapon* w = new Weapon(5, 5, "pistol");
             //newRoom->setThing(w);
+            newRoom->setThing(nullptr);
             break;
         } case '+': {
             //TODO: Implement when weapons are developed
             //newRoom->setPerson(new Person(10, new Weapon()))
+            newRoom->setThing(nullptr);
             break;
         } case '!': {
             newRoom->setThing(new Survivor());
@@ -122,18 +169,47 @@ Room* buildRoom(char object) {
         } case '@': {
             //TODO: Implement when hazards are developed
             //newRoom->setThing(new Hazard());
+            newRoom->setThing(nullptr);
             break;
         } case '?': {
             newRoom->setThing(new Ammo("pistol", 10));
             break;
         } case '#': {
-            newRoom->setThing(new Alien());
-            break;
-        } default:
+            // TODO: Fix Alien entity bug
+            //newRoom->setThing(new Alien());
             newRoom->setThing(nullptr);
             break;
+        } default: {
+            newRoom->setThing(nullptr);
+            break;
+        }
     }
 
     return newRoom;
 }
+
+void displayMap(const vector<vector<char>>& map) {
+    for (const auto& row : map) {
+        for (const auto& cell : row) {
+            cout << cell << ' ';
+        }
+        cout << endl;
+    }
+}
+
+void printHints(const Room *room) {
+    if (room->getLeft() != nullptr) {
+        room->getLeft()->getThing()->printSelf();
+    }
+    if (room->getRight() != nullptr) {
+        room->getRight()->getThing()->printSelf();
+    }
+    if (room->getUp() != nullptr) {
+        room->getUp()->getThing()->printSelf();
+    }
+    if (room->getDown() != nullptr) {
+        room->getDown()->getThing()->printSelf();
+    }
+}
+
 

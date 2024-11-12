@@ -2,6 +2,8 @@
 // Created by barbulescuv on 10/28/2024.
 //
 
+#include <iostream>
+#include <ostream>
 using namespace std;
 #include "Survivor.h"
 #include "Person.h"
@@ -54,6 +56,11 @@ void Survivor::setXYTranslate() {
     xTranslate = dist(gen);
     yTranslate = dist(gen);
 }
+
+void Survivor::printSelf() {
+    cout << "You hear distant footsteps" << endl;
+}
+
 
 
 
