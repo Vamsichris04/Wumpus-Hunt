@@ -23,6 +23,8 @@ public:
 
     void setThing(Entity* e);
     void setPerson(Person *p);
+    Entity* getThing() const;
+    Person* getPerson() const;
 
     void print() const;
 
