@@ -10,6 +10,7 @@
 
 
 class Person : public Entity{
+protected:
     int health;
     Weapon* weapon = nullptr;
     Room* room = nullptr;

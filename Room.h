@@ -37,6 +37,7 @@ public:
     void setDown(Room* room);
     void setLeft(Room* room);
     void setRight(Room* room);
+    int getDistanceTo(Room * room);
 };
 
 
