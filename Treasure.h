@@ -5,6 +5,7 @@
 #ifndef TREASURE_H
 #define TREASURE_H
 #include "Entity.h"
+#include <string>
 
 
 class Treasure : public Entity{

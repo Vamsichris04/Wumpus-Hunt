@@ -3,7 +3,7 @@
 //
 
 #include "Ammo.h"
-
+#include <iostream>
 #include <utility>
 
 Ammo::Ammo(std::string name, int changeValueBy) {
@@ -14,10 +14,16 @@ Ammo::Ammo(std::string name, int changeValueBy) {
 Ammo::~Ammo() = default;
 
 void Ammo::interact(Person *p) {
-    // If the ammo is for the same type of weapon the player is carrying, add ammo
-    if (p -> getWeapon()->getName() == this->name) {
-        p -> getWeapon()->changeAmmo(changeValueBy);
+    // Ammo is the same for each gun
+    if (p -> getWeapon() != nullptr) {
+        p -> getWeapon() -> changeAmmo(changeValueBy);
+        std::cout << "You found ammo for your gun! Ammo increase by " << changeValueBy << "." << std::endl;
+    } else {
+        std::cout << "You found ammo, but you dont have a weapon :( !" << std::endl;
     }
+}
+void Ammo::printSelf() {
+    std::cout << "Ammo" << std::endl;
 }
 
 

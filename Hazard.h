@@ -24,11 +24,6 @@ public:
 
     void printSelf() const;
 };
-class Alien : public Hazard {
-public:
-    Alien();
-    void interact(Person& player) ; // Ends the game upon interaction
-};
 
 class ExposedWiresAndPits : public Hazard {
 public:
