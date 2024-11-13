@@ -17,7 +17,7 @@ public:
     ~Treasure() override = default;
 
     virtual std::string getName() const;
-    virtual int getChangeValue() const;
+    virtual int getChangeValue();
     virtual void setChangeValue(int value);
     void printSelf() override = 0;  // Depends on the derived class
 };

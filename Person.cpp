@@ -5,6 +5,9 @@
 #include <iostream>
 #include "Person.h"
 
+#include "Room.h"
+#include "weapon.h"
+
 using namespace std;
 
 Person::Person(int startingHealth, Room* startingRoom)
@@ -14,7 +17,6 @@ Person::Person(int startingHealth, Room* startingRoom)
 
 Person::~Person() {
     delete weapon;
-    delete room;
     weapon = nullptr;
     room = nullptr;
 }
@@ -63,9 +65,6 @@ Weapon* Person::getWeapon() const {
 }
 
 void Person::setRoom(Room* r) {
-    if (room != r) {
-        delete room;  // Free the old room
-    }
     room = r;
 }
 

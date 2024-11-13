@@ -3,7 +3,8 @@
 
 #include <string>
 
-#include "Entity.h" // Include Entity here, as Weapon directly inherits from it
+#include "Entity.h"
+
 class Person; // Forward declaration to avoid circular dependency
 
 class Weapon : public Entity {

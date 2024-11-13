@@ -166,26 +166,23 @@ Room* buildRoom(char object) {
     Room* newRoom = new Room();
     switch (object) {
         case '>': {
-            //TODO: Implement when weapons are developed
-            //Weapon* w = new Weapon(5, 5, "pistol");
-            //newRoom->setThing(w);
+            Weapon* w = new Weapon(5, 5, "pistol");
+            newRoom->setThing(w);
             break;
         } case '+': {
-            //TODO: Implement when weapons are developed
-            //newRoom->setPerson(new Person(10, new Weapon()))
+            newRoom->setPerson(new Person(10, new Weapon()))
             break;
         } case '!': {
             newRoom->setThing(new Survivor());
             break;
         } case '@': {
-            //TODO: Implement when hazards are developed
-            //newRoom->setThing(new Hazard());
+            newRoom->setThing(new Hazard());
             break;
         } case '?': {
             newRoom->setThing(new Ammo("pistol", 10));
             break;
         } case '#': {
-            //newRoom->setThing(new Alien());
+            newRoom->setThing(new Alien());
             break;
         } default:
             newRoom->setThing(nullptr);

@@ -110,24 +110,10 @@ CMakeFiles/Wumpus_Hunt.dir/Weapon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wumpus_Hunt.dir/Weapon.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Weapon.cpp -o CMakeFiles\Wumpus_Hunt.dir\Weapon.cpp.s
 
-CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj: CMakeFiles/Wumpus_Hunt.dir/flags.make
-CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj: C:/Users/sudersanamv/CLionProjects/Wumpus-Hunt/Hazard.cpp
-CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj: CMakeFiles/Wumpus_Hunt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj -MF CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.obj.d -o CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.obj -c C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Hazard.cpp
-
-CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Hazard.cpp > CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.i
-
-CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Hazard.cpp -o CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.s
-
 CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj: CMakeFiles/Wumpus_Hunt.dir/flags.make
 CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj: C:/Users/sudersanamv/CLionProjects/Wumpus-Hunt/Person.cpp
 CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj: CMakeFiles/Wumpus_Hunt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj -MF CMakeFiles\Wumpus_Hunt.dir\Person.cpp.obj.d -o CMakeFiles\Wumpus_Hunt.dir\Person.cpp.obj -c C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Person.cpp
 
 CMakeFiles/Wumpus_Hunt.dir/Person.cpp.i: cmake_force
@@ -137,6 +123,20 @@ CMakeFiles/Wumpus_Hunt.dir/Person.cpp.i: cmake_force
 CMakeFiles/Wumpus_Hunt.dir/Person.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wumpus_Hunt.dir/Person.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Person.cpp -o CMakeFiles\Wumpus_Hunt.dir\Person.cpp.s
+
+CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj: CMakeFiles/Wumpus_Hunt.dir/flags.make
+CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj: C:/Users/sudersanamv/CLionProjects/Wumpus-Hunt/Hazard.cpp
+CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj: CMakeFiles/Wumpus_Hunt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj -MF CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.obj.d -o CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.obj -c C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Hazard.cpp
+
+CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Hazard.cpp > CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.i
+
+CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sudersanamv\CLionProjects\Wumpus-Hunt\Hazard.cpp -o CMakeFiles\Wumpus_Hunt.dir\Hazard.cpp.s
 
 CMakeFiles/Wumpus_Hunt.dir/Treasure.cpp.obj: CMakeFiles/Wumpus_Hunt.dir/flags.make
 CMakeFiles/Wumpus_Hunt.dir/Treasure.cpp.obj: C:/Users/sudersanamv/CLionProjects/Wumpus-Hunt/Treasure.cpp
@@ -213,8 +213,8 @@ Wumpus_Hunt_OBJECTS = \
 "CMakeFiles/Wumpus_Hunt.dir/WumpusDriver.cpp.obj" \
 "CMakeFiles/Wumpus_Hunt.dir/Entity.cpp.obj" \
 "CMakeFiles/Wumpus_Hunt.dir/Weapon.cpp.obj" \
-"CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj" \
 "CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj" \
+"CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj" \
 "CMakeFiles/Wumpus_Hunt.dir/Treasure.cpp.obj" \
 "CMakeFiles/Wumpus_Hunt.dir/Survivor.cpp.obj" \
 "CMakeFiles/Wumpus_Hunt.dir/Alien.cpp.obj" \
@@ -227,8 +227,8 @@ Wumpus_Hunt_EXTERNAL_OBJECTS =
 Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/WumpusDriver.cpp.obj
 Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/Entity.cpp.obj
 Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/Weapon.cpp.obj
-Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj
 Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/Person.cpp.obj
+Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/Hazard.cpp.obj
 Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/Treasure.cpp.obj
 Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/Survivor.cpp.obj
 Wumpus_Hunt.exe: CMakeFiles/Wumpus_Hunt.dir/Alien.cpp.obj
