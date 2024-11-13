@@ -18,7 +18,6 @@ void Alien::interact(Person* p) {
         std::cout << "The Alien is already dead." << std::endl;
         return;
     }
-
     std::cout << "You have entered the Alien's room unarmed or with limited range! The Alien attacks!" << std::endl;
     p->changeHealth(-p->getHealth()); // Player dies, game over
 }

@@ -13,9 +13,13 @@ protected:
     int changeValueBy = 0;
     std::string name;
 public:
+    Treasure() = default;
     ~Treasure() override = default;
+
+    virtual std::string getName() const;
+    virtual int getChangeValue() const;
+    virtual void setChangeValue(int value);
+    void printSelf() override = 0;  // Depends on the derived class
 };
-
-
 
 #endif //TREASURE_H
