@@ -6,6 +6,8 @@
 #define ALIEN_H
 #include "Entity.h"
 
+class Room;
+
 class Alien : public Entity{
     bool hit = false; // If the alien has been hit or not
     bool grabbedPlayer = false; // If the player has been grabbed by the alien or not

@@ -6,6 +6,9 @@
 #include <iostream>
 #include <utility>
 
+#include "Person.h"
+#include "Weapon.h"
+
 Ammo::Ammo(std::string name, int changeValueBy) {
     this -> name = std::move(name);
     this -> changeValueBy = changeValueBy;

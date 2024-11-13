@@ -28,6 +28,9 @@ void Room::setThing(Entity *e) {
 }
 void Room::setPerson(Person *p) {player = p;}
 
+Entity* Room::getThing() const {return object;}
+Person* Room::getPerson() const {return player;}
+
 void Room::interact() const {
     object ->interact(player);
 }

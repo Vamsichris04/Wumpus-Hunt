@@ -6,6 +6,8 @@
 #include <iostream>
 #include <cstdlib> // for rand
 
+#include "Person.h"
+
 using namespace std;
 
 // Base Hazard Constructor
@@ -32,14 +34,6 @@ void Hazard::setName(const string& hazardName) {
 // Print method
 void Hazard::printSelf() const {
     cout << "Hazard: " << name << ", Damage: " << damage << endl;
-}
-
-// Alien Constructor
-Alien::Alien() : Hazard("Alien", 100) {} // If totalHp = 100
-
-void Alien::interact(Person& player) {
-    cout << "You encountered the Alien! Game Over." << endl;
-    // Game Ending implementation
 }
 
 // Exposed Wires and Pits Constructor

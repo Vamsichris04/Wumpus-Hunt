@@ -2,6 +2,10 @@
 #include <iostream>
 #include <cmath>
 
+#include "Person.h"
+#include "Room.h"
+#include "Weapon.h"
+
 // Constructor
 Alien::Alien() : hit(false), grabbedPlayer(false) {
     std::cout << "An Alien has spawned in a random room!" << std::endl;

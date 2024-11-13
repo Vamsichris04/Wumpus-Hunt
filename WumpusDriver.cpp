@@ -17,6 +17,7 @@
 using namespace std;
 Room* buildMap(const vector<vector<char>>& map);
 Room* buildRoom(char object);
+void printHints(const Room* room);
 
 void displayMap(const vector<vector<char>>& map) {
     for (const auto& row : map) {
@@ -39,6 +40,63 @@ int main() {
     // Display the map
     cout << "Map Layout:" << endl;
     displayMap(map);
+
+    Room* room = buildMap(map);
+    Person* player = room->getPerson();
+    bool gameOver = false;
+
+    while (!gameOver) {
+        printHints(room);
+
+        // Player and object interact together
+        room->interact();
+
+        char choice;
+        cin >> choice;
+        switch (choice) {
+            case 'w': {
+                if (room->getLeft() != nullptr) {
+                    player->setRoom(room->getLeft());
+                    room->getLeft()->setPerson(player);
+                    room->setPerson(nullptr);
+                    room = room->getLeft();
+                }
+                break;
+            }
+            case 'e': {
+                if (room->getRight() != nullptr) {
+                    player->setRoom(room->getRight());
+                    room->getRight()->setPerson(player);
+                    room->setPerson(nullptr);
+                    room = room->getRight();
+                }
+                break;
+            }
+            case 'n': {
+                if (room->getUp() != nullptr) {
+                    player->setRoom(room->getUp());
+                    room->getUp()->setPerson(player);
+                    room->setPerson(nullptr);
+                    room = room->getUp();
+                }
+                break;
+            }
+            case 's': {
+                if (room->getDown() != nullptr) {
+                    player->setRoom(room->getDown());
+                    room->getDown()->setPerson(player);
+                    room->setPerson(nullptr);
+                    room = room->getDown();
+                }
+                break;
+            }
+            case 'q': {
+                gameOver = true;
+                break;
+            }
+            default: break;
+        }
+    }
 
     return 0;
 }
@@ -127,7 +185,7 @@ Room* buildRoom(char object) {
             newRoom->setThing(new Ammo("pistol", 10));
             break;
         } case '#': {
-            newRoom->setThing(new Alien());
+            //newRoom->setThing(new Alien());
             break;
         } default:
             newRoom->setThing(nullptr);
@@ -135,5 +193,20 @@ Room* buildRoom(char object) {
     }
 
     return newRoom;
+}
+
+void printHints(const Room* room) {
+    if (room->getLeft() != nullptr) {
+        room->getLeft()->getThing()->printSelf();
+    }
+    if (room->getRight() != nullptr) {
+        room->getRight()->getThing()->printSelf();
+    }
+    if (room->getUp() != nullptr) {
+        room->getUp()->getThing()->printSelf();
+    }
+    if (room->getDown() != nullptr) {
+        room->getDown()->getThing()->printSelf();
+    }
 }
 
