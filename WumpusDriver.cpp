@@ -52,6 +52,7 @@ int main() {
         room->interact();
 
         char choice;
+        cout << "Move (w/n/s/e) or quit (q): ";
         cin >> choice;
         switch (choice) {
             case 'w': {
@@ -94,7 +95,8 @@ int main() {
                 gameOver = true;
                 break;
             }
-            default: break;
+            default:
+                cout << "Invalid move. Try again." << endl;
         }
     }
 
@@ -166,23 +168,23 @@ Room* buildRoom(char object) {
     Room* newRoom = new Room();
     switch (object) {
         case '>': {
-            Weapon* w = new Weapon(5, 5, "pistol");
-            newRoom->setThing(w);
+            //Weapon* w = new Weapon(5, 5, "pistol");
+            //newRoom->setThing(w);
             break;
         } case '+': {
-            newRoom->setPerson(new Person(10, new Weapon()))
+            //newRoom->setPerson(new Person(10, new Weapon()))
             break;
         } case '!': {
             newRoom->setThing(new Survivor());
             break;
         } case '@': {
-            newRoom->setThing(new Hazard());
+            //newRoom->setThing(new Hazard());
             break;
         } case '?': {
-            newRoom->setThing(new Ammo("pistol", 10));
+            newRoom->setThing(new Ammo("gun", 10));
             break;
         } case '#': {
-            newRoom->setThing(new Alien());
+            //newRoom->setThing(new Alien());
             break;
         } default:
             newRoom->setThing(nullptr);
@@ -206,4 +208,3 @@ void printHints(const Room* room) {
         room->getDown()->getThing()->printSelf();
     }
 }
-
