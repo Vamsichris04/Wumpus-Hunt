@@ -34,12 +34,11 @@ Your mission is to survive and eliminate the Alien before it gets to you. But be
 - `q` - Quit the game  
 
 ### **Hints for Hazards**  
-- **"You smell something foul."** - An Alien is nearby.  
-- **"You hear a faint buzzing sound."** - Exposed wires in the adjacent room.  
-- **"You feel a cool draft."** - A nearby pit.  
-- **"The air feels thin."** - Low oxygen detected nearby.  
+- **"You hear a grotesque screeching nearby...."** - An Alien is nearby.  
+- **"You hear sparks nearby."** - Exposed wires in the adjacent room.  
+- **"You hear air leaking out nearby."** - Low oxygen detected nearby.  
 - **"You hear a creaking sound."** - A faulty door might be close.  
-- **"You hear distant footsteps."** - A Survivor is nearby and may relocate you.
+- **"You hear distant screeching...."** - A Survivor is nearby and may relocate you.
 
 ---
 
