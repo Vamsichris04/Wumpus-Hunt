@@ -51,5 +51,4 @@ Your mission is to survive and eliminate the Alien before it gets to you. But be
 ### **Clone the Repository**  
 1. Open your terminal and run:  
    ```bash
-   git clone https://github.com/YourUsername/SpaceshipSurvivalGame.git
-   cd SpaceshipSurvivalGame
+   git clone https://github.com/Vamsichris04/wumpus_hunt
